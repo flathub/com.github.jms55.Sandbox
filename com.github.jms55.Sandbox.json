@@ -25,7 +25,7 @@
             "build-commands": [
                 "head -n -8 Cargo.toml > t && mv t Cargo.toml",
                 "cargo --offline fetch",
-                "cargo --offline build --release --features video-recording",
+                "cargo --offline build --release",
                 "install -Dm755 ./target/release/sandbox -t /app/bin/",
                 "install -Dm644 ./flatpak/com.github.jms55.Sandbox.metainfo.xml -t /app/share/metainfo/",
                 "install -Dm644 ./flatpak/com.github.jms55.Sandbox.desktop -t /app/share/applications/",
@@ -36,7 +36,7 @@
                     "type": "git",
                     "url": "https://github.com/JMS55/sandbox",
                     "tag": "v1.1.0",
-                    "commit": "f330b8e79e51ba435a52d15b789ee668a06377a8"
+                    "commit": "a39102325496e1f8aa5347110bdeb12988bad134"
                 },
                 "crate-sources.json"
             ]

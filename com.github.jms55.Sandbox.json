@@ -1,14 +1,15 @@
 {
     "app-id": "com.github.jms55.Sandbox",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
     "finish-args": [
         "--device=dri",
-        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
         "--share=ipc"
     ],
     "build-options": {
@@ -23,7 +24,6 @@
             "name": "sandbox",
             "buildsystem": "simple",
             "build-commands": [
-                "head -n -8 Cargo.toml > t && mv t Cargo.toml",
                 "cargo --offline fetch",
                 "cargo --offline build --release",
                 "install -Dm755 ./target/release/sandbox -t /app/bin/",
@@ -35,8 +35,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/JMS55/sandbox",
-                    "tag": "v1.1.0",
-                    "commit": "a39102325496e1f8aa5347110bdeb12988bad134"
+                    "tag": "v1.2.0",
+                    "commit": "403ae9dc0ca5c0bcbd30704c298443c3267d76b3"
                 },
                 "crate-sources.json"
             ]

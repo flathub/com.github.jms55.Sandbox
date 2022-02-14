@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.jms55.Sandbox",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -35,8 +35,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/JMS55/sandbox",
-                    "tag": "v1.2.0",
-                    "commit": "403ae9dc0ca5c0bcbd30704c298443c3267d76b3"
+                    "tag": "v1.3.0",
+                    "commit": "b2ec611e9ad97685dc39dd7d76327aa38f9497ef"
                 },
                 "crate-sources.json"
             ]

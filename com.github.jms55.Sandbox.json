@@ -37,6 +37,10 @@
                     "tag": "v1.3.0",
                     "commit": "b2ec611e9ad97685dc39dd7d76327aa38f9497ef"
                 },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
+                },
                 "crate-sources.json"
             ]
         }

@@ -41,7 +41,7 @@
                     "type": "patch",
                     "path": "fix-appdata.patch"
                 },
-                "crate-sources.json"
+                "cargo-sources.json"
             ]
         }
     ]

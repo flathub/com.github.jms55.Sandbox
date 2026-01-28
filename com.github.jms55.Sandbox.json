@@ -1,15 +1,14 @@
 {
     "app-id": "com.github.jms55.Sandbox",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
     "finish-args": [
         "--device=dri",
-        "--socket=wayland",
-        "--socket=fallback-x11",
+        "--socket=x11",
         "--share=ipc"
     ],
     "build-options": {
@@ -38,7 +37,11 @@
                     "tag": "v1.3.0",
                     "commit": "b2ec611e9ad97685dc39dd7d76327aa38f9497ef"
                 },
-                "crate-sources.json"
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
+                },
+                "cargo-sources.json"
             ]
         }
     ]

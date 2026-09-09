@@ -11,7 +11,7 @@ diff --git a/flatpak/com.github.jms55.Sandbox.metainfo.xml b/flatpak/com.github.
 index 17aef0d..a696c44 100644
 --- a/flatpak/com.github.jms55.Sandbox.metainfo.xml
 +++ b/flatpak/com.github.jms55.Sandbox.metainfo.xml
-@@ -26,12 +26,13 @@
+@@ -26,12 +26,14 @@
  
    <url type="homepage">https://github.com/JMS55/sandbox</url>
    <url type="bugtracker">https://github.com/JMS55/sandbox/issues</url>
@@ -22,7 +22,7 @@ index 17aef0d..a696c44 100644
    <summary>A sand simulation game</summary>
    <description>
      <p>A sand simulation game</p>
--    <p>For a list of keyboard controls visit https://github.com/JMS55/sandbox#controls</p>
+     <p>For a list of keyboard controls visit https://github.com/JMS55/sandbox#controls</p>
    </description>
  
    <screenshots>

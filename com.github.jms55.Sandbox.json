@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.jms55.Sandbox",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "25.08",
+    "runtime-version": "26.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -26,9 +26,9 @@
                 "cargo --offline fetch",
                 "cargo --offline build --release",
                 "install -Dm755 ./target/release/sandbox -t /app/bin/",
-                "install -Dm644 ./flatpak/com.github.jms55.Sandbox.metainfo.xml -t /app/share/metainfo/",
-                "install -Dm644 ./flatpak/com.github.jms55.Sandbox.desktop -t /app/share/applications/",
-                "install -Dm644 ./flatpak/com.github.jms55.Sandbox.svg -t /app/share/icons/hicolor/scalable/apps/"
+                "install -Dm644 ./flatpak/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/",
+                "install -Dm644 ./flatpak/${FLATPAK_ID}.desktop -t /app/share/applications/",
+                "install -Dm644 ./flatpak/${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps/"
             ],
             "sources": [
                 {
